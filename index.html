@@ -7,6 +7,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main id="app">
+    <section class="container" id="form-section">
+      <h1>User Feedback</h1>
+
+      <p id="validation-msg" class="validation hidden"></p>
+
+      <form id="feedback-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="e.g., Alex Johnson"
+            data-tooltip="Enter your full name as you’d like it displayed."
+          />
+          <div class="tooltip"></div>
+        </div>
   <script defer src="cp_1.js"></script>
 </body>
 </html>
