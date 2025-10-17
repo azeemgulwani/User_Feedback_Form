@@ -48,3 +48,11 @@ form.addEventListener('mouseout', function(event) {
     }
   }
 });
+
+// Validation and Prevent Default
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  var name = form.name.value.trim();
+  var email = form.email.value.trim();
+  var comments = form.comments.value.trim();
+  var valid = true;
