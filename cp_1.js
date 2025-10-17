@@ -56,3 +56,16 @@ form.addEventListener('submit', function(event) {
   var email = form.email.value.trim();
   var comments = form.comments.value.trim();
   var valid = true;
+
+  if (!name) { valid = false; form.name.classList.add('invalid'); }
+  if (!email) { valid = false; form.email.classList.add('invalid'); }
+  if (!comments) { valid = false; form.comments.classList.add('invalid'); }
+
+  if (!valid) {
+    validationMsg.textContent = 'All fields are required.';
+    validationMsg.classList.remove('hidden');
+    return;
+  }
+
+  validationMsg.textContent = '';
+  validationMsg.classList.add('hidden')
