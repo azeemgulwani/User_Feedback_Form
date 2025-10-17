@@ -69,3 +69,15 @@ form.addEventListener('submit', function(event) {
 
   validationMsg.textContent = '';
   validationMsg.classList.add('hidden')
+
+  // Append feedback dynamically
+  var card = document.createElement('div');
+  card.className = 'feedback-card';
+
+  var who = document.createElement('div');
+  who.className = 'who';
+  who.textContent = name;
+
+  var meta = document.createElement('div');
+  meta.className = 'meta';
+  meta.textContent = email;
