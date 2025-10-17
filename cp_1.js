@@ -81,3 +81,16 @@ form.addEventListener('submit', function(event) {
   var meta = document.createElement('div');
   meta.className = 'meta';
   meta.textContent = email;
+
+  var text = document.createElement('div');
+  text.className = 'text';
+  text.textContent = comments;
+
+  card.appendChild(who);
+  card.appendChild(meta);
+  card.appendChild(text);
+
+  feedbackDisplay.appendChild(card);
+  form.reset();
+  commentCount.textContent = '0 characters';
+});
