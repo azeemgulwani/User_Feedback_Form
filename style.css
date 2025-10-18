@@ -106,3 +106,29 @@ button:active { transform: translateY(1px); }
   border-color: #ef4444 !important;
   box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15) !important;
 }
+
+/* Feedback display */
+.feedback-list {
+  display: grid;
+  gap: 12px;
+}
+.feedback-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  background: #ffffff;
+}
+.feedback-card .who {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+.feedback-card .meta {
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.feedback-card .text {
+  white-space: pre-wrap;
+  color: #111827;
+}
