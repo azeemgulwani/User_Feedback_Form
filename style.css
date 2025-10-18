@@ -132,3 +132,8 @@ button:active { transform: translateY(1px); }
   white-space: pre-wrap;
   color: #111827;
 }
+
+/* Small screens */
+@media (max-width: 640px) {
+  .container { padding: 16px; }
+}
